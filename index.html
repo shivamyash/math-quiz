@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container center ">
+     
+            <h1 style="color: whitesmoke; margin-bottom: 12px;   text-shadow: 2px 2px  13px rgba(253, 16, 16, 0.8);
+            ">Math Quiz</h1>
+      <div class="difficulty-based-container">
+      
+
+        <select id="operation-option">    
+          <option value="">--Please choose Operations-</option>
+          <option value="addition">ADDITION</option>
+          <option value="subtraction">SUBTRACTION</option>
+          <option value="multiplication">MULTIPLICATION</option>
+          <option value="division">DIVISION</option>
+         
+        </select>
+      </div>
+
+      <div class="question-section">
+      <span id="easy-section">
+        <span id="firstnum" class="numforCssStyling">00</span>
+       <span id="icon" class="iconforCssStyling">+</span>
+       <span class="numforCssStyling" id="secondnum">00</span>
+       <span class="numforCssStyling" >=</span> 
+       <span class="numforCssStyling">?</span>
+      </span>
+        <br>
+       <p id="wrongtext"></p>
+   <input type="number" id="user_ans" placeholder="Type Ans.."><br>
+   <button id="submit">Submit</button> 
+   <button id="next_qs">Next</button> 
+      </div>
+
+     <div id="display_score">
+        <h2 style="color: whitesmoke;">SCORE: <span id="score_result">0</span></h2>
+     </div>
+
+    </div>
+  </body>
+</html>
